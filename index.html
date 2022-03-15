@@ -8,6 +8,12 @@
 
 <body>
 
+  <form action="http://api.giphy.com/v1/gifs/search?" method="GET">
+    <label for="q">Enter name of gif</label>
+    <input type="text" id="search-input" name="q">
+    <input type="submit" value="Search giphy" id="submit-button">
+  </form>
+
 <script src="https://unpkg.com/jquery"></script>
 <script src="https://unpkg.com/axios/dist/axios.js"></script>
 <script src="app.js"></script>
