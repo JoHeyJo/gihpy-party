@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Giphy Party!</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Giphy Party!</title>
-</head>
+  <body>
+    <form id="giphy-form">
+      <label for="q">Enter name of gif</label>
+      <input type="text" id="search-input" name="q" />
+      <input type="submit" value="Search giphy" id="submit-button" />
+    </form>
 
-<body>
+    <button id="delete-button">Delete Gifs</button>
 
-  <form action="http://api.giphy.com/v1/gifs/search?" method="GET">
-    <label for="q">Enter name of gif</label>
-    <input type="text" id="search-input" name="q">
-    <input type="submit" value="Search giphy" id="submit-button">
-  </form>
+    <div id="gifArea"></div>
 
-<script src="https://unpkg.com/jquery"></script>
-<script src="https://unpkg.com/axios/dist/axios.js"></script>
-<script src="app.js"></script>
-</body>
-
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
